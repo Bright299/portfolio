@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shimatayo | Penetration Tester &amp; Developer</title>
+  <meta name="description" content="Portfolio of Bright Kekeli Dorvlo (Shimatayo): penetration testing intern, developer and founder of Proton Company Limited.">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="matrix" aria-hidden="true"></canvas>
+
+  <nav>
+    <div class="logo">root@shimatayo:~$</div>
+    <ul>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Experience">Experience</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Company">Proton</a></li>
+      <li><a href="#Learning">Learning</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <p class="prompt">$ whoami</p>
+        <div class="profile-photo">
+          <img src="image/profile.jpeg" alt="Portrait of Bright Kekeli Dorvlo">
+        </div>
+        <h1>Bright Kekeli Dorvlo</h1>
+        <p class="role"><span id="typed"></span><span class="cursor"></span></p>
+        <p class="hero-description">Penetration testing intern, software builder and founder of Proton Company Limited. I break things to make them safer, and I build tools and websites that work.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#Projects">./view_projects</a>
+          <a class="btn" href="Bright_Kekeli_Dorvlo_CV.pdf">./download_cv</a>
+          <a class="btn" href="#Contact">./contact_me</a>
+        </div>
+      </div>
+
+      <div class="scene" aria-label="3D security cube">
+        <div class="cube">
+          <div class="face f1">PENTEST</div>
+          <div class="face f2">DEVELOP</div>
+          <div class="face f3">BUILD</div>
+          <div class="face f4">SECURE</div>
+          <div class="face f5">PROTON</div>
+          <div class="face f6">CYBER1DEFENCE</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <h2>about_me</h2>
+      <div class="terminal">
+        <p><span class="ok">$</span> cat about.txt</p>
+        <p>BSc Computer Science student at Regent University of Science and Technology, Ghana (2025 to 2027). Penetration testing intern at Cyber1Defence, focused on ethical hacking and offensive security. Founder and CEO of Proton Company Limited, building websites, e-commerce platforms and working desktop software.</p>
+        <p><span class="ok">$</span> status --current</p>
+        <p>Reading: Linux Basics for Hackers</p>
+      </div>
+    </section>
+
+    <section id="experience" class="reveal">
+      <h2>experience</h2>
+      <div class="grid">
+        <article class="card tilt">
+          <h3>Penetration Testing Intern</h3>
+          <p>Cyber1Defence, Ghana. Hands-on offensive security work, OSINT investigation, reconnaissance and vulnerability assessment, plus cybersecurity and IT training materials.</p>
+          <span class="tag">OSINT</span><span class="tag">Recon</span><span class="tag">Pentesting</span>
+        </article>
+
+        <article class="card tilt">
+          <h3>Founder and CEO</h3>
+          <p>Proton Company Limited. I lead the company, deliver client websites and e-commerce platforms, and build custom software.</p>
+          <span class="tag">Leadership</span><span class="tag">Web</span><span class="tag">Software</span>
+        </article>
+
+        <article class="card tilt">
+          <h3>BSc Computer Science</h3>
+          <p>Regent University of Science and Technology. February 2025 to February 2027.</p>
+          <span class="tag">Networking</span><span class="tag">DSA</span><span class="tag">Software Engineering</span>
+        </article>
+      </div>
+
+      <h2 class="section-spacer">skills</h2>
+      <div class="terminal" id="skills">
+        <p>Offensive security</p><div class="bar"><i data-w="80"></i></div>
+        <p>OSINT and recon</p><div class="bar"><i data-w="85"></i></div>
+        <p>Web development</p><div class="bar"><i data-w="90"></i></div>
+        <p>Python tooling</p><div class="bar"><i data-w="75"></i></div>
+        <p>Linux</p><div class="bar"><i data-w="65"></i></div>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2>projects</h2>
+      <div class="grid">
+        <article class="card tilt">
+          <h3>Teo (pronounced Tayo)</h3>
+          <p>A desktop AI assistant with an animated character that lives on your screen. Talk to it by voice, connect it through MCP to Claude, Grok, Gemini or other models, or run it fully offline on a local Qwen 2.5 model. Build your own local skills and automations, set standing orders, browse and search the web, and choose a personality and voice. Safety modes keep you in control: read-only, ask every time, or trust. Current version: 1.2.1.</p>
+          <span class="tag">Desktop</span><span class="tag">AI agent</span><span class="tag">MCP</span><span class="tag">Voice</span><span class="tag">Local LLM</span>
+        </article>
+
+        <article class="card tilt">
+          <h3>Sermona</h3>
+          <p>A church presentation app in the spirit of EasyWorship, with an AI sermon assistant. It listens live, detects when a preacher quotes scripture, and suggests the matching verse. The projection operator approves it onto the screen or declines it.</p>
+          <span class="tag">Desktop</span><span class="tag">AI</span><span class="tag">Live detection</span><span class="tag">Church tech</span>
+        </article>
+
+        <article class="card tilt">
+          <h3>KeyTackTab</h3>
+          <p>A Python keystroke and mouse tracking tool built with pynput, designed as a self-monitoring tool for use inside a virtual machine.</p>
+          <span class="tag">Python</span><span class="tag">pynput</span>
+        </article>
+
+        <article class="card tilt">
+          <h3>The Billionaire's Collection</h3>
+          <p>Luxury e-commerce redesign in Tailwind CSS with a dark and gold palette.</p>
+          <span class="tag">E-commerce</span><span class="tag">Tailwind</span>
+        </article>
+
+        <article class="card tilt">
+          <h3>Saviour Farms</h3>
+          <p>E-commerce platform for a Ghanaian aquaculture business.</p>
+          <span class="tag">E-commerce</span><span class="tag">Client work</span>
+        </article>
+
+        <article class="card tilt">
+          <h3>Christian Fashionable Design</h3>
+          <p>Branded e-commerce site for a faith-inspired clothing brand.</p>
+          <span class="tag">E-commerce</span><span class="tag">Branding</span>
+        </article>
+
+        <article class="card tilt">
+          <h3>Meridian Login</h3>
+          <p>An original branded login page design.</p>
+          <span class="tag">UI design</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="company" class="reveal">
+      <h2>proton_company_limited</h2>
+      <div class="terminal">
+        <p><span class="ok">$</span> whois proton</p>
+        <p>Proton Company Limited designs and builds websites, e-commerce platforms and custom software for businesses. Founded and led by Bright Kekeli Dorvlo.</p>
+        <p>Business email: protoncompanylmtd@gmail.com</p>
+      </div>
+
+      <h2 class="section-spacer">events</h2>
+      <article class="card tilt">
+        <h3>Grokbot Event</h3>
+        <p>The first tech event I ever attended.</p>
+        <div class="grid event-gallery">
+          <img class="tilt" src="image/grokbot-1.jpg" alt="At the Grokbot event">
+          <img class="tilt" src="image/grokbot-2.jpg" alt="At the Grokbot event">
+          <img class="tilt" src="image/grokbot-3.jpg" alt="Check-in at the Grokbot event">
+          <img class="tilt" src="image/grokbot-4.jpg" alt="Check-in at the Grokbot event">
+          <img class="tilt" src="image/grokbot-5.jpg" alt="Check-in at the Grokbot event">
+        </div>
+      </article>
+
+      <article class="card tilt event-card">
+        <h3>GitHub Event</h3>
+        <p>The second tech event I attended, after Grokbot.</p>
+      </article>
+    </section>
+
+    <section id="learning" class="reveal">
+      <h2>currently_learning</h2>
+      <div class="terminal">
+        <p><span class="ok">$</span> reading --now</p>
+        <p>Linux Basics for Hackers. Building command line fluency for offensive security work.</p>
+        <p><span class="ok">$</span> topics --learned</p>
+        <p>WHOIS and DNS recon, Google dorking, certificate transparency with crt.sh, Shodan, manual OSINT methodology.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>contact</h2>
+      <div class="terminal">
+        <p><span class="ok">$</span> ./connect</p>
+        <p>Personal: brightdorvlo2@gmail.com</p>
+        <p>Business (Proton Company Limited): protoncompanylmtd@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/bright-dorvlo-b60124316">linkedin.com/in/bright-dorvlo-b60124316</a></p>
+        <p>GitHub: <a href="https://github.com/bright299">github.com/bright299</a></p>
+        <a class="btn" href="mailto:brightdorvlo2@gmail.com">./send_message</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Bright Kekeli Dorvlo (Shimatayo). Built with caffeine and curiosity.</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
